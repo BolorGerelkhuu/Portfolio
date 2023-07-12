@@ -54,8 +54,8 @@ body{
     background-image: url(Photos/background.png);
     background-size: cover;
     background-position: center;
-    position: relative; /* Set the position to relative */
-    z-index: 1; /* Set the z-index to 1 */
+    position: relative;
+    z-index: 1; 
 }
 
 .container{
@@ -158,7 +158,7 @@ nav ul li a:hover:after{
     transform: translateX(0);
   }
 .about-description{
-    font-size: 13px;
+    font-size: 20px;
 }
 .sub-title{
     font-size: 30px;
