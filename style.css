@@ -280,7 +280,6 @@ font-size: 14px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
-    position: relative;
 }
 .btn:hover{
     background: #ff004f;
@@ -294,11 +293,10 @@ font-size: 14px;
 }
 .contact-right{
     flex-basis: 60%;
-    position: relative;
 }
 .contact-left p{
     margin-top: 30px;
-    position: relative;
+
 }
 .contact-left p i{
     color: #ff004f;
@@ -307,7 +305,7 @@ font-size: 14px;
 }
 .social-icons{
     margin-top: 30px;
-    position: relative;
+    
 }
 .social-icons a{
     text-decoration: none;
