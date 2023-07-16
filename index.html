@@ -202,7 +202,7 @@
                 var aboutSectionPosition = aboutSection.getBoundingClientRect().top;
                 var windowHeight = window.innerHeight;
 
-                if (aboutSectionPosition < windowHeight) {
+                if (aboutSectionPosition < windowHeight/2) {
                     aboutCol1.classList.add("animate-slide-left");
                     aboutCol2.classList.add("animate-slide-right");
                     aboutSection.classList.remove("hide");
