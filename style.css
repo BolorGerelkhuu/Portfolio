@@ -225,6 +225,14 @@ font-size: 14px;
 /* ------------------portfolio------------------- */
 #portfolio{
     padding: 50px 0;
+    opacity: 0; /* Initially set opacity to 0 */
+    transform: translateY(-50px); /* Initially move the section up */
+    transition: opacity 0.5s, transform 0.5s; /* Add transition effect */
+}
+#portfolio.animate {
+    opacity: 1; /* Change opacity to 1 when the section comes into view */
+    transform: translateY(0); 
+    transition: 1s;
 }
 #portfolio h1{
     text-align: center;
