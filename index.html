@@ -267,7 +267,24 @@
 
       </script>
       <script>
-        
+        document.addEventListener("DOMContentLoaded", function() {
+    var portfolioSection = document.getElementById("portfolio");
+
+    function checkScroll() {
+        var portfolioSectionPosition = portfolioSection.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+
+        if (portfolioSectionPosition < windowHeight / 2) {
+            portfolioSection.classList.add("animate");
+        } else {
+            portfolioSection.classList.remove("animate");
+        }
+    }
+
+    window.addEventListener("load", checkScroll);
+    window.addEventListener("scroll", checkScroll);
+});
+
       </script>
 </body>
 </html>
