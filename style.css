@@ -9,11 +9,11 @@ html{
 }
 body{
     
-    background: #060714ea;
+    background: #0b0c24ea;
     color: #fff;
-    position: relative;
     
 }
+/* --------------------- side bar ----------------------- */
 .sidebar {
     position: fixed;
     top: 50%;
@@ -47,7 +47,7 @@ body{
     transition: all 0.3s;
     transform: rotate(45deg) scale(1.4);
   }
-  
+  /* ----------------- header -------------------- */
 #header {
     width: 100%;
     height: 100vh;
@@ -57,7 +57,21 @@ body{
     position: relative;
     z-index: 1; 
 }
-
+.logo-pic{
+    position: relative;
+}
+#background-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+  }
+#header .container{
+    position: relative;
+}
 .container{
     padding: 10px 10%;
 }
@@ -168,6 +182,7 @@ nav ul li a:hover:after{
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    padding-top: 30px;
 }
 .tab-links{
     margin-right: 50px;
@@ -312,9 +327,11 @@ font-size: 14px;
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #9e1212;
     display: inline-block;
     transition: transform 0.5s;
+     
+
 }
 .social-icons a:hover{
     color: #ff004f;
