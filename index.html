@@ -286,5 +286,39 @@
 });
 
       </script>
+      <script>
+        const sidebarDots = document.querySelectorAll('.sidebar-dot');
+        const sections = Array.from(document.querySelectorAll('section'));
+    
+        function activateDot(index) {
+            sidebarDots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+    
+        function checkSection() {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const sidebarHeight = document.querySelector('.sidebar').offsetHeight;
+    
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop - sidebarHeight; // Exclude sidebar height
+                const sectionHeight = section.offsetHeight;
+    
+                if (
+                    scrollPosition >= sectionTop &&
+                    scrollPosition < sectionTop + sectionHeight - windowHeight
+                ) {
+                    activateDot(index);
+                }
+            });
+        }
+    
+        window.addEventListener('scroll', checkSection);
+    </script>
 </body>
 </html>
